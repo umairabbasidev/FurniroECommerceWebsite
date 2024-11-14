@@ -41,7 +41,14 @@
                 <img src="./assets/account.svg">
                 <img src="./assets/search.svg">
                 <img src="./assets/heart.svg">
-                <img src="./assets/shop.svg">
+                <div class="relative">
+
+                    <img src="./assets/shop.svg">
+                    <div
+                        class="w-[20px] h-[20px] bg-red-600 rounded-full text-white text-sm text-center  absolute -top-2 -right-4">
+                        2
+                    </div>
+                </div>
             </div>
             <button id="burgerMenuBtn">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -613,21 +620,39 @@
 
         </div>
 
+        <button
+            class="text-[16px] font-semibold leading-[150%] text-[#B88E2F] py-3 px-[74px] border border-[#B88E2F] bg-[#fff] mt-8 mx-auto block">
+            Show More
+        </button>
 
 
 
 
 
 
-        <div class="section-2-img-2"></div>
-        <div class="section-2-img-3"></div>
-        <div class="section-2-img-4"></div>
-        <div class="section-2-img-5"></div>
-        <div class="section-2-img-6"></div>
-        <div class="section-2-img-7"></div>
-        <div class="section-2-img-8"></div>
     </div>
     </div>
+
+    <!-- <div class="section-3">
+
+        <section>
+            <div class="col-1">
+                <div class="section-3-text md:ml-[50px] ml-[15px]">
+                    <h1 class="text-[40px] font-bold leading-[1.2] text-gray-900 max-w-[422px]"> 50+ Beautiful rooms
+                        inspiration </h1>
+                    <p class="text-[16px] max-w-[368px] font-medium leading-[1.5] mt-[7px] text-gray-700 ">Our designer
+                        already made a lot of beautiful prototipe of rooms that inspire you</p>
+                    <button
+                        class="text-[#fff] font-bold md:py-[15px] py-[12px] px-[52px] bg-[#B88E2F] mb-[37px] mt-[25px]">Explore
+                        More</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <img src="./section-3-img-1.png" alt="">
+            </div>
+        </section>
+
+    </div> -->
     <script>
         let burgerMenuBtn = document.querySelector("#burgerMenuBtn")
         let burgerMenu = document.querySelector("#burgerMenu")
