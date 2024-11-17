@@ -22,22 +22,29 @@
 <body class="font-[Poppins] relative">
     <header class="shadow-md  w-full  ">
         <nav
-            class="items-center justify-between flex-wrap  lg:pl-[54px] pl-2 lg:pr-[100px] pr-3 py-[30px] flex   lg:max-w-[1440px] mx-auto ">
+            class="items-center justify-between flex-wrap  lg:pl-[15px] pl-2 lg:pr-[1px] pr-3 py-[30px] flex   lg:max-w-[1440px] mx-auto ">
             <div class="navLogo flex md:items-end items-center gap-[5px]">
                 <img src="./assets/logo.png" alt="logo">
-                <h1 class="text-[#000] font-[montserrat] md:text-[34px] text-xl font-bold leading-none">Furniro</h1>
+                <h1 class="text-[#000] font-[montserrat] md:text-[28px] text-xl font-bold leading-none">Furniro</h1>
             </div>
             <div class="navLinks">
                 <ul
-                    class="md:flex hidden items-center lg:gap-[75px] gap-6 text-[#000000] text-[16px] font-medium leading-none">
+                    class="xl:flex hidden items-center lg:gap-[20px] gap-6 text-[#000000] text-[16px] font-medium leading-none">
                     <li><a href="#" class="hover:text-[#B88E2F] ">Home</a></li>
-                    <li><a href="#" class="hover:text-[#B88E2F] ">Shop</a></li>
-                    <li><a href="#" class="hover:text-[#B88E2F] ">About</a></li>
-                    <li><a href="#" class="hover:text-[#B88E2F] ">Contact</a></li>
+                    <li><a href="./shop.html" class="hover:text-[#B88E2F] ">Shop</a></li>
+                    <li><a href="./singleProduct.html" class="hover:text-[#B88E2F] ">Single Product</a></li>
+                    <li><a href="./cartSidebar.html" class="hover:text-[#B88E2F] ">Cart Sidebar</a></li>
+                    <li><a href="./productComparison.html" class="hover:text-[#B88E2F] ">Product Comparison</a></li>
+                    <li><a href="./cart.html" class="hover:text-[#B88E2F] ">Cart</a></li>
+                    <li><a href="./checkout.html" class="hover:text-[#B88E2F] ">Checkout</a></li>
+                    <li><a href="./contact.html" class="hover:text-[#B88E2F] ">Contact</a></li>
+                    <li><a href="./blog.html" class="hover:text-[#B88E2F] ">Blog</a></li>
+
+
 
                 </ul>
             </div>
-            <div class="navSocialIcons md:flex hidden items-center lg:gap-[45px] gap-5">
+            <div class="navSocialIcons xl:flex hidden items-center lg:gap-[15px] gap-5">
                 <img src="./assets/account.svg">
                 <img src="./assets/search.svg">
                 <img src="./assets/heart.svg">
@@ -52,7 +59,7 @@
             </div>
             <button id="burgerMenuBtn">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" aria-hidden="true" class="h-6 w-6 md:hidden block">
+                    stroke="currentColor" aria-hidden="true" class="h-6 w-6 xl:hidden mr-2 block">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
                     </path>
@@ -64,51 +71,57 @@
     </header>
 
     <div id="burgerMenu"
-        class="burgerMenu max-w-md shadow-lg bg-[#c0ae97] h-[100%] px-3 py-4 absolute hidden w-full top-0 right-0 z-50">
-        <div class="navLogo flex items-center mx-2 justify-between gap-[5px]">
-            <div class="flex items-center gap-[5px]">
-                <img src="./assets/logo.png" alt="logo">
-                <h1 class="text-[#000] font-[montserrat] md:text-[34px] text-xl font-bold leading-none">Furniro
-                </h1>
-            </div>
+    class="burgerMenu max-w-md shadow-lg bg-[#c0ae97] h-[100%]  px-3 py-4 absolute hidden w-full top-0 right-0 z-50">
+    <div class="navLogo flex items-center mx-2 justify-between gap-[5px]">
+        <div class="flex items-center gap-[5px]">
+            <img src="./assets/logo.png" alt="logo">
+            <h1 class="text-[#000] font-[montserrat] md:text-[34px] text-xl font-bold leading-none">Furniro
+            </h1>
+        </div>
 
-            <button id="crossBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" aria-hidden="true" class="h-6 w-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-        </div>
-        <div class="navLinks text-[#000000] text-[16px] font-medium leading-none flex flex-col ">
-            <a href="#" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Home</a>
-            <a href="#" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Shop</a>
-            <a href="#" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">About</a>
-            <a href="#"
-                class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Contact</a>
-
-
-        </div <div class="navSocialIcons">
-        <div
-            class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
-            <p class="pl-1">Account</p>
-            <img src="./assets/account.svg">
-        </div>
-        <div
-            class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
-            <p class="pl-1">Search</p>
-            <img src="./assets/search.svg">
-        </div>
-        <div
-            class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
-            <p class="pl-1">Favourite</p>
-            <img src="./assets/heart.svg">
-        </div>
-        <div
-            class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
-            <p class="pl-1">Cart</p>
-            <img src="./assets/shop.svg">
-        </div>
+        <button id="crossBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" aria-hidden="true" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
     </div>
+    <div class="navLinks text-[#000000] text-[16px] font-medium leading-none flex flex-col ">
+        <a href="#" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Home</a>
+        <a href="./shop.html" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Shop</a>
+        <a href="./singleProduct.html" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Single Product</a>
+        <a href="./cartSidebar.html"
+            class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Cart Sidebar</a>
+
+            <a href="./productComparison.html" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Product Comparison</a>
+            <a href="./cart.html" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Cart</a>
+            <a href="./checkout.html" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Checkout</a>
+            <a href="./contact.html" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Contact</a>
+            <a href="./blog.html" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Blog</a>
+    </div>
+
+    
+    <div
+        class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
+        <p class="pl-1">Account</p>
+        <img src="./assets/account.svg">
+    </div>
+    <div
+        class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
+        <p class="pl-1">Search</p>
+        <img src="./assets/search.svg">
+    </div>
+    <div
+        class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
+        <p class="pl-1">Favourite</p>
+        <img src="./assets/heart.svg">
+    </div>
+    <div
+        class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
+        <p class="pl-1">Cart</p>
+        <img src="./assets/shop.svg">
+    </div>
+</div>
 
     </div>
 
@@ -794,7 +807,7 @@
         <div class="flex justify-between md:px-[100px] 2xl:px-0  px-7 py-[48px] flex-wrap max-w-[1440px] mx-auto ">
 
 
-            <div class="col-1">
+            <div class="col-1 w-full md:w-auto">
                 <h4 class="text-black text-[24px] font-bold leading-normal">Funiro.</h4>
                 <div class="class= text-[#9F9F9F] text-[16px] font-normal leading-normal mt-[50px]">
                     <p class=" ">400 University Drive
@@ -843,6 +856,7 @@
     </footer>
     <script>
         let burgerMenuBtn = document.querySelector("#burgerMenuBtn")
+
         let burgerMenu = document.querySelector("#burgerMenu")
         let crossBtn = document.querySelector("#crossBtn")
         burgerMenuBtn.addEventListener("click", () => {
@@ -855,7 +869,7 @@
             burgerMenuBtn.classList.toggle("hidden")
         }
         )
-        document.querySelector("#")
+        
     </script>
 
 </body>
