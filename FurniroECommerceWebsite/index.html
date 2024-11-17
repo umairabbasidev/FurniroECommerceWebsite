@@ -71,57 +71,66 @@
     </header>
 
     <div id="burgerMenu"
-    class="burgerMenu max-w-md shadow-lg bg-[#c0ae97] h-[100%]  px-3 py-4 absolute hidden w-full top-0 right-0 z-50">
-    <div class="navLogo flex items-center mx-2 justify-between gap-[5px]">
-        <div class="flex items-center gap-[5px]">
-            <img src="./assets/logo.png" alt="logo">
-            <h1 class="text-[#000] font-[montserrat] md:text-[34px] text-xl font-bold leading-none">Furniro
-            </h1>
+        class="burgerMenu max-w-md shadow-lg bg-[#c0ae97] h-[100%]  px-3 py-4 absolute hidden w-full top-0 right-0 z-50">
+        <div class="navLogo flex items-center mx-2 justify-between gap-[5px]">
+            <div class="flex items-center gap-[5px]">
+                <img src="./assets/logo.png" alt="logo">
+                <h1 class="text-[#000] font-[montserrat] md:text-[34px] text-xl font-bold leading-none">Furniro
+                </h1>
+            </div>
+
+            <button id="crossBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" aria-hidden="true" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="navLinks text-[#000000] text-[16px] font-medium leading-none flex flex-col ">
+            <a href="#" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Home</a>
+            <a href="./shop.html"
+                class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Shop</a>
+            <a href="./singleProduct.html"
+                class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Single
+                Product</a>
+            <a href="./cartSidebar.html"
+                class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Cart Sidebar</a>
+
+            <a href="./productComparison.html"
+                class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Product
+                Comparison</a>
+            <a href="./cart.html"
+                class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Cart</a>
+            <a href="./checkout.html"
+                class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Checkout</a>
+            <a href="./contact.html"
+                class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Contact</a>
+            <a href="./blog.html"
+                class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Blog</a>
         </div>
 
-        <button id="crossBtn">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" aria-hidden="true" class="h-6 w-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-        </button>
-    </div>
-    <div class="navLinks text-[#000000] text-[16px] font-medium leading-none flex flex-col ">
-        <a href="#" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Home</a>
-        <a href="./shop.html" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Shop</a>
-        <a href="./singleProduct.html" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Single Product</a>
-        <a href="./cartSidebar.html"
-            class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Cart Sidebar</a>
 
-            <a href="./productComparison.html" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Product Comparison</a>
-            <a href="./cart.html" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Cart</a>
-            <a href="./checkout.html" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Checkout</a>
-            <a href="./contact.html" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Contact</a>
-            <a href="./blog.html" class="hover:text-[#B88E2F] block my-2   py-3 hover:bg-slate-100 mx-1 pl-3 rounded-md">Blog</a>
+        <div
+            class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
+            <p class="pl-1">Account</p>
+            <img src="./assets/account.svg">
+        </div>
+        <div
+            class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
+            <p class="pl-1">Search</p>
+            <img src="./assets/search.svg">
+        </div>
+        <div
+            class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
+            <p class="pl-1">Favourite</p>
+            <img src="./assets/heart.svg">
+        </div>
+        <div
+            class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
+            <p class="pl-1">Cart</p>
+            <img src="./assets/shop.svg">
+        </div>
     </div>
-
-    
-    <div
-        class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
-        <p class="pl-1">Account</p>
-        <img src="./assets/account.svg">
-    </div>
-    <div
-        class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
-        <p class="pl-1">Search</p>
-        <img src="./assets/search.svg">
-    </div>
-    <div
-        class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
-        <p class="pl-1">Favourite</p>
-        <img src="./assets/heart.svg">
-    </div>
-    <div
-        class="flex items-center justify-between hover:text-[#B88E2F] py-2 cursor-pointer px-2 hover:bg-slate-100 mx-1  rounded-md">
-        <p class="pl-1">Cart</p>
-        <img src="./assets/shop.svg">
-    </div>
-</div>
 
     </div>
 
@@ -869,7 +878,7 @@
             burgerMenuBtn.classList.toggle("hidden")
         }
         )
-        
+
     </script>
 
 </body>
